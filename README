@@ -1,0 +1,10 @@
+Groupe 4 : NOM Prénom (Login Github)
+	ARAUJO LOPEZ David (davidapp5)
+	BRABAN Yoann (ybraban)
+	LE POTTIER Cyril (cyrilLP)
+	MARTIN Clément (tintin7789)
+	NERET Emmanuel (eneret)
+	
+Sujet 4 : Fonctions et Fonctions d'Ordre Supérieur
+
+En se basant sur le Design Pattern Foncteur, est-il possible de définir des jeux de classes et de fonctions permettant la gestion homogènes d'objets "Callable", c'est à dire d'objets exposant un système similaire à celui des appels de fonctions classiques ? Comment écririez vous un systèmes permettant de récupérer les types des arguments et de retour d'un de ces objets et comment écrire la composée arbitraire de ces fonctions ? Inspirz vous de Boost.Function ou des articles de Alexandrescu sur le sujet.
