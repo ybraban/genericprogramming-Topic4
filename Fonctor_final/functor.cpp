@@ -26,6 +26,13 @@
  * instructions.
  */
 
+#include <iostream>
+#include <functional>
+#include <ostream>
+#include <vector>
+#include <fstream>
+#include <algorithm>
+
 //
 // Foncteur pour les fonctions « unaires » :
 //    Type de retour : Ret
@@ -133,6 +140,24 @@ struct f_less_equal : f_binary_function<T, T, bool>
 {
     bool operator()(const T &operande1, const T &operande2) const	{ return operande1 <= operande2; }
 };
+/**
+ Foncteur d'affichage dans un flux pour utiliser avec le for_each
+ **/
+template <class T>    
+class Afficher    
+{       
+	std::ostream &os_;    
+    
+public:       
+	
+    Afficher(std::ostream &os) throw(): os_(os){}
+    
+	void operator()(const T &val)          
+	{ 
+		os_ << val << ' '; 
+	}    
+};
+
 
 /*
  **************************************************************************************************
